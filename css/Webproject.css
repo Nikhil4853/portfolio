@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: #080808ff;
+}
+
+#header {
+    width: 100%;
+    height: 30vh;
+}
+
+.container {
+    padding: 5px 10%;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* ---------------------------------------------navigation----------------------------------------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 300px;
+    font-size: 34px;
+}
+
+.logo span {
+    color: blue;
+}
+
+.logo name:hover {
+    color: blue;
+    font-size: 40px;
+}
+
+.logo span:hover {
+    color: black;
+    font-size: 40px;
+}
+
+.logo sname:hover {
+    color: black;
+    font-size: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: ' ';
+    width: 100%;
+    height: 3px;
+}
+
+nav ul li a:hover {
+    font-size: 25px;
+    color: blue;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    background: blue;
+    position: absolute;
+    transition: 0.5s;
+    bottom: -6px;
+    left: 0;
+}
+
+.header-text {
+    margin-top: 9%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: blue;
+}
+
+.header-text collegeIfo {
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/****************************************************** grid******************************************* */
+
+.grid-container {
+    display: inline-grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-item h2 {
+    padding: 20px;
+}
+
+.imagess {
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 0 0 2px black;
+}
+
+.imagess:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 8px black;
+}
